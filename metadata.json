@@ -1,0 +1,8 @@
+{
+  "name": "Gakuen City Official World",
+  "description": "An introductory website for the Gakuen City universe, featuring lore, districts, factions, schools, and character profiles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
