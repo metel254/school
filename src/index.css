@@ -35,23 +35,24 @@ body {
 }
 
 @keyframes scroll-glitch {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(100vh); }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 100vh, 0); }
 }
 
 .glitch-card:hover {
   animation: card-glitch 0.2s cubic-bezier(.25, .46, .45, .94) both infinite;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.4), inset 0 0 20px rgba(255, 0, 0, 0.2);
   border-color: rgba(255, 0, 0, 0.8);
+  will-change: transform, box-shadow;
 }
 
 @keyframes card-glitch {
-  0% { transform: translate(0) }
-  20% { transform: translate(-3px, 2px) skewX(-2deg) }
-  40% { transform: translate(-3px, -2px) }
-  60% { transform: translate(3px, 2px) skewX(2deg) }
-  80% { transform: translate(3px, -2px) }
-  100% { transform: translate(0) }
+  0% { transform: translate3d(0, 0, 0) }
+  20% { transform: translate3d(-3px, 2px, 0) skewX(-2deg) }
+  40% { transform: translate3d(-3px, -2px, 0) }
+  60% { transform: translate3d(3px, 2px, 0) skewX(2deg) }
+  80% { transform: translate3d(3px, -2px, 0) }
+  100% { transform: translate3d(0, 0, 0) }
 }
 
 @keyframes twinkle {
@@ -60,8 +61,8 @@ body {
 }
 
 @keyframes shooting-star {
-  0% { transform: translateX(100vw) translateY(0) rotate(-45deg); opacity: 1; }
-  100% { transform: translateX(-50vw) translateY(150vw) rotate(-45deg); opacity: 0; }
+  0% { transform: translate3d(100vw, 0, 0) rotate(-45deg); opacity: 1; }
+  100% { transform: translate3d(-50vw, 150vw, 0) rotate(-45deg); opacity: 0; }
 }
 
 .shooting-star {
@@ -72,6 +73,7 @@ body {
   box-shadow: 0 0 10px #ffffff, 0 0 20px #e879f9;
   border-radius: 50%;
   animation: shooting-star 4s linear infinite;
+  will-change: transform, opacity;
 }
 
 .shooting-star:nth-child(1) { top: 10%; left: 80%; animation-delay: 0s; animation-duration: 3s; }
@@ -82,14 +84,17 @@ body {
 
 .nebula-1 {
   background: radial-gradient(circle at center, rgba(168, 85, 247, 0.4) 0%, rgba(236, 72, 153, 0.1) 40%, transparent 70%);
+  will-change: transform;
 }
 
 .nebula-2 {
   background: radial-gradient(circle at center, rgba(56, 189, 248, 0.4) 0%, rgba(139, 92, 246, 0.1) 40%, transparent 70%);
+  will-change: transform;
 }
 
 .nebula-3 {
   background: radial-gradient(circle at center, rgba(232, 121, 249, 0.3) 0%, rgba(14, 165, 233, 0.1) 40%, transparent 70%);
+  will-change: transform;
 }
 
 .stars-1 {

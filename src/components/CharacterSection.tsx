@@ -114,10 +114,10 @@ export default function CharacterSection() {
                     const isKirari = char.id === 23;
                     const isChairman = char.id === 26;
 
-                    let cardClass = "bg-zinc-900/50 backdrop-blur border border-zinc-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/30 transition-colors relative";
-                    if (isRen) cardClass = "bg-zinc-900/80 border-red-900/50 rounded-2xl overflow-hidden flex flex-col group hover:border-red-500/80 hover:shadow-[0_0_20px_rgba(220,38,38,0.2)] transition-colors relative glitch-card";
-                    if (isKirari) cardClass = "bg-indigo-950/40 backdrop-blur border border-fuchsia-500/30 rounded-2xl overflow-hidden flex flex-col group hover:border-fuchsia-400/60 hover:shadow-[0_0_30px_rgba(217,70,239,0.3)] transition-all relative";
-                    if (isChairman) cardClass = "bg-black backdrop-blur border border-zinc-800 rounded-2xl overflow-hidden flex flex-col group hover:border-zinc-600 transition-colors relative";
+                    let cardClass = "bg-zinc-900 md:bg-zinc-900/50 md:backdrop-blur border border-zinc-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/30 transition-colors relative transform-gpu";
+                    if (isRen) cardClass = "bg-zinc-900/90 border-red-900/50 rounded-2xl overflow-hidden flex flex-col group hover:border-red-500/80 hover:shadow-[0_0_20px_rgba(220,38,38,0.2)] transition-colors relative glitch-card transform-gpu";
+                    if (isKirari) cardClass = "bg-indigo-950 md:bg-indigo-950/40 md:backdrop-blur border border-fuchsia-500/30 rounded-2xl overflow-hidden flex flex-col group hover:border-fuchsia-400/60 hover:shadow-[0_0_30px_rgba(217,70,239,0.3)] transition-all relative transform-gpu";
+                    if (isChairman) cardClass = "bg-black md:backdrop-blur border border-zinc-800 rounded-2xl overflow-hidden flex flex-col group hover:border-zinc-600 transition-colors relative transform-gpu";
 
                     if (isSpecialSingle) cardClass += " w-full max-w-sm";
 
@@ -152,6 +152,8 @@ export default function CharacterSection() {
                             key={imageUrl} // Force re-render on image change
                             src={imageUrl}
                             alt={char.name}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                             onError={(e) => {
                               e.currentTarget.style.display = 'none';
