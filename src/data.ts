@@ -135,7 +135,7 @@ export const characters: Character[] = [
   { id: 9, name: '카자마키 시노부', age: 17, status: '1학년', faction: '츠쿠요미 고교', ability: '질풍신뢰 (초고속 움직임)', rank: 'B', description: '병약하지만 변덕스럽고 괴짜스러운 닌자 오타쿠. "~고자루" 말투를 쓴다.', ageGroup: '미성년' },
   { id: 10, name: '시라누이 세츠나', age: 17, status: '1학년', faction: '츠쿠요미 고교', ability: '심안 (감각 극대화)', rank: 'B', description: '맹인 검사로 과묵하고 단호한 성격. 맨발로 다니는 것을 선호한다.', ageGroup: '미성년' },
   { id: 11, name: '벨', age: '불명', status: '마스코트', faction: '츠쿠요미 고교', ability: '무능력', rank: 'F', description: '카스미의 이능으로 실체화된 츠쿠요미 고교의 최고 인기 마스코트. 텐구 가면을 쓴 해맑은 먹보다.', ageGroup: '미성년' },
-  { id: 12, name: '나나미 나기', age: 19, status: '3학년 / 학생회장', faction: '아틀란 고교', ability: '수분해제 (물 분자 분해)', rank: 'A', description: '친근한 사투리를 쓰는 책임감 강한 학생회장. 물을 극도로 무서워해(물고포증), 수영장이나 거센 비를 피하며 평소에도 구명조끼를 입고 다닌다.', ageGroup: '미성년' },
+  { id: 12, name: '나나미 나기', age: 19, status: '3학년 / 학생회장', faction: '아틀란 고교', ability: '수분해제 (물 분자 분해)', rank: 'A', description: '친근한 사투리를 쓰는 책임감 강한 학생회장. 물을 극도로 무서워해(물공포증), 수영장이나 거센 비를 피하며 평소에도 구명조끼를 입고 다닌다.', ageGroup: '미성년' },
   { id: 13, name: '시오자키 시즈쿠', age: 17, status: '1학년', faction: '아틀란 고교', ability: '유수검 (수분 압축 가속 발사)', rank: 'B', description: '무미건조하고 쿨한 척 하지만 정에 약한 성격. 심해 ASMR을 즐겨 듣는다.', ageGroup: '미성년' },
   { id: 14, name: '미츠키 히마리', age: 17, status: '1학년', faction: '아틀란 고교', ability: '감정누전 (격한 감정에 생체전기 방출)', rank: 'E', description: '매우 똑똑하고 박학다식하지만, 늘 비관적이고 울보인 유리멘탈의 소유자.', ageGroup: '미성년' },
   { id: 15, name: '쿠로야미 치토세', age: 18, status: '2학년', faction: '하키야코 고교', ability: '쉐도우 (그림자 조종)', rank: 'C', description: '중2병에 걸린 고풍스러운 말투의 소녀. 대인기피증이 있으며 오컬트와 도시전설 마니아다.', ageGroup: '미성년' },
