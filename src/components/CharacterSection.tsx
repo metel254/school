@@ -108,7 +108,7 @@ export default function CharacterSection() {
                     const isAdultMode = adultModeChars[char.id];
                     const displayAgeGroup = (isToggleable && isAdultMode) ? '성인' : char.ageGroup;
                     
-                    const imageUrl = encodeURI(`https://pub-45af8b1d3ef244eb9ed534ec05f1ae12.r2.dev/${displayAgeGroup}/${char.id}/1.webp`);
+                    const imageUrl = encodeURI(`https://pub-fbfaf42c16d1448390348b005d1d9f92.r2.dev/${displayAgeGroup}/${char.id}/1.webp`);
                     
                     const isRen = char.id === 20;
                     const isKirari = char.id === 23;
